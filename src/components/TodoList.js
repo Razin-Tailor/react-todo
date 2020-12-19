@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 
 import TodoItem from './TodoItem';
 import AddTodo from './AddTodo';
+import Navbar from './Navbar';
 
 export class TodoList extends Component {
     render() {
         return (
-            <div className="container-fluid p-5">
+            <div>
+                <Navbar/>
                 <AddTodo/>
                 <TodoItem/>
                 <TodoItem/>
